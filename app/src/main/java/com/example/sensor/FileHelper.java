@@ -28,7 +28,7 @@ public class FileHelper {
 
     public FileHelper(Context mContext,String name) throws Exception{
         super();
-        FileOutputStream lightOutput = mContext.openFileOutput("Lighttttt"+name, Context.MODE_PRIVATE);
+        FileOutputStream lightOutput = mContext.openFileOutput("Light"+name, Context.MODE_PRIVATE);
         FileOutputStream gyroOutput = mContext.openFileOutput("Gyroscope"+name, Context.MODE_PRIVATE);
         FileOutputStream magneticOutput = mContext.openFileOutput("Magnetic"+name, Context.MODE_PRIVATE);
         FileOutputStream accelerometerOutput = mContext.openFileOutput("Accelerometer"+name, Context.MODE_PRIVATE);

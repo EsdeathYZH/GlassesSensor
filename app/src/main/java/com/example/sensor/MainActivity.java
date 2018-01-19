@@ -66,6 +66,11 @@ public class MainActivity extends Activity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
+        try{
+            fHelper.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         if(sensorManager!=null){
             sensorManager.unregisterListener(new MySensorEventlistener());
         }
